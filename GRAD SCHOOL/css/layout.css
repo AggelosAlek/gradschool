@@ -1,0 +1,76 @@
+/*css reset*/
+ul,li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+body,html{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+div {
+    *border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/*layout*/
+
+body{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 100vh 1fr 1fr 1fr 1fr 1fr 1px;
+    grid-template-areas:
+    "main-banner"
+    "Education"
+    "register"
+    "course-carousel"
+    "learn-more"
+    "contact-us"
+    "footer";
+}
+
+
+.main-banner{
+    grid-area: main-banner;
+}
+
+.Education{
+    grid-area: Education;
+}
+
+.register{
+    grid-area: register;
+}
+
+.course-carousel{
+    grid-area: course-carousel;
+}
+
+.learn-more{
+    grid-area: learn-more;
+}
+
+.contact-us{
+    grid-area: contact-us;
+}
+
+footer{
+    grid-area: footer;
+}
+
+

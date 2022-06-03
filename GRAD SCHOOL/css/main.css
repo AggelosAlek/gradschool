@@ -1,0 +1,578 @@
+/*header*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 2;
+    height: 100%;
+    pointer-events: none;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 34, 57, 0.95);
+    display: flex;
+    padding: 20px 50px;
+    align-items: center;
+    pointer-events: all;
+}
+
+nav{
+    flex: 2;
+    text-align: right;
+}
+
+.logo{
+    flex: 1;
+    font-size: 40px;
+}
+
+.orange{
+    color:orange;
+    font-weight: bold;
+}
+
+.white{
+    color:white;
+    font-weight: bold;
+}
+
+/*main banner*/
+
+video{
+    width: 100%;
+    *height: auto;
+}
+
+.main-banner{
+     position: relative;
+    overflow: hidden;
+}
+
+.blue-shadow{
+   position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 34, 57, 0.85);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+/*banner text*/
+.main-banner-text{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.main-banner-text p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-banner-text h1{
+    margin: 50px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.main-banner-text a{
+    color: white;
+    font-weight: bold;
+    background: orange;
+    padding:20px 40px;
+    
+}
+
+/*mini banners*/
+.mini-banners{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,0);
+    display: flex;
+    gap:30px;
+    align-items: end;
+}
+
+.mini-banners p{
+    font-size: 15px;
+    padding: 10px 0;
+    display: none;
+}
+
+.mini-banners a{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    display: none;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.banner{
+    height: 120px;
+    width: 350px;
+    background: #0c1228;
+    color: white;
+    padding: 35px 50px;
+    transition: height ease-in-out 0.5s;
+}
+
+.banner:hover {
+    height: 300px; 
+    background-color: orange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner:hover p{
+    display: block;
+}
+
+.banner:hover a{
+    display: block;
+}
+
+/*Education section*/
+
+.Education{
+    width:100%;
+    background-color: #0c1228;
+    background-image: url("../images/choosing-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.why-grad{
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.border{
+    border: white 1px solid;
+    width: fit-content;
+    padding: 10px 30px;
+    color: white;
+}
+
+.container-carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.selectors{
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.selectors a{
+    color:white;
+    font-weight: bold;
+
+}
+
+.selector-checked a{
+    color:orange;
+    font-weight: bold;
+}
+
+.selector-checked{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checked{
+    margin:10px;
+    width: 25px;
+    height: 25px;
+    background-color:orange;
+}
+.checkbox{
+    margin:10px;
+    width: 15px;
+    height: 15px;
+    background-color:#ffffff;
+}
+
+/*image-text*/
+
+.content{
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    margin:100px 0;
+
+}
+
+.image{
+    flex:1;
+    *width: 100%;
+}
+
+.why-text{
+    flex:1;
+}
+
+.why-text h4{
+    font-size: 40px;
+}
+
+.why-text p{
+    line-height: 2;
+}
+
+.display-none{
+    display: none;
+}
+
+/*register section*/
+
+.register{
+    width:100%;
+    background-color: #0c1228;
+    background-image: url("../images/coming-soon-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+.flex{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.width{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.online-course h3{
+    font-size: 40px;
+}
+
+/*countdown*/
+
+.countdown {
+    font-size: 65px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.countdown p{
+    font-size: 15px;
+    color:orange;
+}
+
+.col{
+    padding:20px 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 150px;
+    
+}
+
+/*form*/
+
+.register-text{
+    background-color: rgba(255, 255, 255, 0.25);
+    line-height: 2;
+    font-weight: bold;
+    padding: 25px 30px;
+    text-align: center;
+}
+.register-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 100%;
+    padding: 50px 0;
+}
+
+.online-course{
+    align-self: center;
+}
+
+.register-form input{
+    padding:20px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin:0 50px;
+    color: white;
+}
+
+.register-form input[type=submit]{
+    background-color: orange;
+    color: white;
+    width: 150px;
+    align-self: center;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder { 
+    color:white;
+}
+
+/*carousel slider*/
+
+.course-carousel{
+    width:100%;
+    background-color: #0c1228;
+    background-image: url("../images/courses-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+
+.course-text{
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin: 100px 0;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.cards{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    display: flex;
+    gap: 50px;
+    justify-content:start;
+    pointer-events: none;
+}
+
+/*cards*/
+
+.card{
+    min-width: 200px;
+    max-width: 370px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    color: black; 
+    border-radius: 10px;
+}
+
+.photo img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-text{
+    margin-left: 30px;
+}
+
+.card-text h4{
+    font-size: 25px;
+}
+
+.card-text p{
+    line-height: 1.5;
+}
+
+.card-footer{
+    margin: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card-footer img {
+    border-radius: 100%;
+    border: orange 2px solid;
+}
+
+.btn-pay a{
+    color: orange;
+}
+
+.btn-free a{
+    color: black;
+}
+
+/*learn more*/
+
+.learn-more{
+    width:100%;
+    background-color: #0c1228;
+    background-image: url("../images/video-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.learn-more h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.learn-more p{
+    line-height: 1.5;
+    margin: 40px 0;
+}
+
+.learn-more a{
+    color: white;
+    padding: 15px 25px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.video{
+    position: relative;
+}
+
+.video-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.video-text h3{
+    margin: 0;
+    font-size: 30px;
+    color: rgb(53, 53, 53);
+}
+
+.video-text a{
+    color: white;
+    padding:25px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+/*contact us*/
+
+.contact-us{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0;
+}
+
+.contact-us-container{
+    background-color: #0c1228;
+    background-image: url("../images/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+}
+
+.in-touch{
+    margin: 100px 0;;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+}
+.contact-form form{
+    background-color: rgba(255, 255, 255, 0.15);
+    height: calc(100%-40px);
+    padding: 40px;
+}
+
+.top-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.top-form input{
+    width: 100%;
+}
+
+.contact-form input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin:0;
+}
+
+.contact-form input ,textarea{
+    padding:20px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 0 0 40px 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.contact-form textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+footer{
+    background-color: #0c1228;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
